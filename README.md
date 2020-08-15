@@ -1,0 +1,2 @@
+# Hackintosh-Intel-i5-10500-B460M-MORTAR-iGPU-UHD630
+Hackintosh-Intel-i5-10500-B460M-MORTAR-iGPU-UHD630
