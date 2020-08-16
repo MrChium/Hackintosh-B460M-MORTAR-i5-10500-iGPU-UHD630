@@ -28,7 +28,7 @@ macOS version: 10.15.6
 - [x] 睡眠/唤醒
 - [x] 所有USB端口
 - [x] 核显硬件加速
-- [x] 声卡输出
+- [x] 板载声卡
 - [x] 板载网卡
 
 ### 板载网卡设置
@@ -39,3 +39,6 @@ macOS version: 10.15.6
 ```
 Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1
 ```
+
+### 设置默认启动项
+> 在启动选择界面，先选中要启动的项，然后按住键盘的 Ctrl + Enter (回车键) 进入系统，下次重启后默认就选中这个项了。
