@@ -10,13 +10,16 @@
 | 内存  | 威刚2666 8G*2 |
 | 显卡  | I5-10500 核显 UHD630  |
 
+### BIOS版本
+
+当前BIOS版本：7C82v12 [BIOS下载地址](https://cn.msi.com/Motherboard/support/MAG-B460M-MORTAR)
+
 ### EFI 
 
 OpenCore: 0.6.1
 
-macOS version: 10.15.6
+macOS version: 10.15.7
 
-支持 macOS 11 Big Sur
 
 ### 系统安装
 * 建议使用 【黑果小兵】macOS Catalina 10.15.6 安装镜像进行安装
@@ -34,13 +37,43 @@ macOS version: 10.15.6
 - [x] 板载网卡
 
 ### 板载网卡设置
-> 系统偏好设置 -> 网络 -> 以太网（高级） -> 硬件 -> 配置:手动, 速度:100baseTX, 双工:全双工, MTU:标准1500
+* 系统偏好设置 -> 网络 -> 以太网（高级） -> 硬件 -> 配置:手动, 速度:100baseTX(千兆网络环境可选择1000baseT), 双工:全双工, MTU:标准1500
+
+### 关于睡眠的问题
+* BIOS默认关闭了USB唤醒，睡眠后需按电源键唤醒
+* 需鼠标键盘唤醒的，在BIOS里设置USB唤醒为允许即可（已修复开启USB唤醒时，关机后不断电操作鼠标或键盘会重新启动的问题）
+
+### 关于Mac序列号的问题
+* 下载 OpenCore Configurator for Mac，打开 PlatformInfo -> Model Lookup | Check Coverage 右侧选择 iMac20,1 机型（生成你的唯一硬件UUID），然后 Save as (另存为) config.plist
+* 在config.plist文件中找到如下代码，记录MLB、SystemSerialNumber和SystemUUID的值并记住它，更新EFI时，用你记录的值替换 /OC/config.plist 下对应的值即可
+
+```
+<key>PlatformInfo</key>
+<dict>
+    <key>Generic</key>
+    <dict>
+        <key>AdviseWindows</key>
+        <false/>
+        <key>MLB</key>
+        <string>C02018701GUKGQGFB</string>
+        <key>ROM</key>
+        <data></data>
+        <key>SpoofVendor</key>
+        <false/>
+        <key>SystemProductName</key>
+        <string>iMac20,1</string>
+        <key>SystemSerialNumber</key>
+        <string>C02CN0H9JWDW</string>
+        <key>SystemUUID</key>
+        <string>A5F92887-E901-494C-8066-CCA416C46A47</string>
+    </dict>
+```
 
 ### Win+Mac双系统解决Win系统时间时差问题
-> 在Windows下运行
+* 在Windows下运行
 ```
 Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1
 ```
 
 ### 设置默认启动项
-> 在启动选择界面，先选中要启动的项，然后按住键盘的 Ctrl + Enter (回车键) 进入系统，下次重启后默认就选中这个项了。
+* 在启动选择界面，先选中要启动的项，然后按住键盘的 Ctrl + Enter (回车键) 进入系统，下次重启后默认就选中这个项了。
