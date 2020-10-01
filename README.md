@@ -44,7 +44,8 @@ macOS version: 10.15.7
 * 需鼠标键盘唤醒的，在BIOS里设置USB唤醒为允许即可（已修复开启USB唤醒时，关机后不断电操作鼠标或键盘会重新启动的问题）
 
 ### 关于Mac序列号的问题
-* 下载 OpenCore Configurator for Mac，打开 PlatformInfo -> Model Lookup | Check Coverage 右侧选择 iMac20,1 机型（生成你的唯一硬件UUID），然后 Save as (另存为) config.plist
+* ==经测试，B460M的主板最适合仿冒的机型是iMac19,1（推荐）请下载最新的EFI文件==
+* 下载 OpenCore Configurator for Mac，打开 PlatformInfo -> Model Lookup | Check Coverage 右侧选择 iMac19,1 机型（生成你的唯一硬件UUID），然后 Save as (另存为) config.plist
 * 在config.plist文件中找到如下代码，记录MLB、SystemSerialNumber和SystemUUID的值并记住它，更新EFI时，用你记录的值替换 /OC/config.plist 下对应的值即可
 
 ```
@@ -55,17 +56,17 @@ macOS version: 10.15.7
         <key>AdviseWindows</key>
         <false/>
         <key>MLB</key>
-        <string>C02018701GUKGQGFB</string>
+        <string>C02935130J9LNV9UE</string>
         <key>ROM</key>
         <data></data>
         <key>SpoofVendor</key>
-        <false/>
+        <true/>
         <key>SystemProductName</key>
-        <string>iMac20,1</string>
+        <string>iMac19,1</string>
         <key>SystemSerialNumber</key>
-        <string>C02CN0H9JWDW</string>
+        <string>C02Z906MJV3Q</string>
         <key>SystemUUID</key>
-        <string>A5F92887-E901-494C-8066-CCA416C46A47</string>
+        <string>FF264005-A041-4841-B17A-263B39D76BA0</string>
     </dict>
 ```
 
