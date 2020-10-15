@@ -16,10 +16,11 @@
 
 ### EFI 
 
-OpenCore: 0.6.1
+OpenCore: 0.6.2
 
 macOS version: 10.15.7
 
+[EFI下载地址](https://github.com/myqqiu/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630/releases)
 
 ### 系统安装
 * 建议使用 【黑果小兵】macOS Catalina 10.15.6 安装镜像进行安装
@@ -42,11 +43,12 @@ macOS version: 10.15.7
 ### 关于睡眠的问题
 * BIOS默认关闭了USB唤醒，睡眠后需按电源键唤醒
 * 需鼠标键盘唤醒的，在BIOS里设置USB唤醒为允许即可（已修复开启USB唤醒时，关机后不断电操作鼠标或键盘会重新启动的问题）
+> PS: 若睡眠有问题的可使用 Hackintool 工具，切换到电源选项，点击一下下面的螺丝刀修复
 
 ### 关于Mac序列号的问题
-* ==经测试，B460M的主板最适合仿冒的机型是iMac19,1（推荐）请下载最新的EFI文件==
 * 下载 OpenCore Configurator for Mac，打开 PlatformInfo -> Model Lookup | Check Coverage 右侧选择 iMac19,1 机型（生成你的唯一硬件UUID），然后 Save as (另存为) config.plist
 * 在config.plist文件中找到如下代码，记录MLB、SystemSerialNumber和SystemUUID的值并记住它，更新EFI时，用你记录的值替换 /OC/config.plist 下对应的值即可
+> 或使用 Hackintool 工具（系统 -> 序列号生成器）来获取三码
 
 ```
 <key>PlatformInfo</key>
