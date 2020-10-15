@@ -8,7 +8,7 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-AWAC.aml</string>
+				<string>SSDT-AWAC</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -16,7 +16,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-PLUG.aml</string>
+				<string>SSDT-PLUG</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -24,7 +24,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-XCPM.aml</string>
+				<string>SSDT-XCPM</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -32,7 +32,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-SHUT.aml</string>
+				<string>SSDT-SHUT</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -212,6 +212,8 @@
 			<false/>
 			<key>ProvideCustomSlide</key>
 			<true/>
+			<key>ProvideMaxSlide</key>
+			<integer>0</integer>
 			<key>RebuildAppleMemoryMap</key>
 			<true/>
 			<key>SetupVirtualMap</key>
@@ -259,6 +261,8 @@
 		<key>Add</key>
 		<array>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>Lilu.kext</string>
 				<key>Comment</key>
@@ -275,6 +279,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>VirtualSMC.kext</string>
 				<key>Comment</key>
@@ -291,6 +297,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>SMCProcessor.kext</string>
 				<key>Comment</key>
@@ -307,6 +315,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>SMCSuperIO.kext</string>
 				<key>Comment</key>
@@ -323,6 +333,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>AppleALC.kext</string>
 				<key>Comment</key>
@@ -339,6 +351,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>WhateverGreen.kext</string>
 				<key>Comment</key>
@@ -355,6 +369,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>XHCI-unsupported.kext</string>
 				<key>Comment</key>
@@ -371,6 +387,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>FakePCIID.kext</string>
 				<key>Comment</key>
@@ -387,6 +405,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>FakePCIID_Intel_HDMI_Audio.kext</string>
 				<key>Comment</key>
@@ -403,6 +423,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>LucyRTL8125Ethernet.kext</string>
 				<key>Comment</key>
@@ -419,6 +441,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>USBInjectAll.kext</string>
 				<key>Comment</key>
@@ -435,6 +459,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>NVMeFix.kext</string>
 				<key>Comment</key>
@@ -454,6 +480,8 @@
 		<key>Block</key>
 		<array>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
@@ -472,10 +500,20 @@
 			<data></data>
 			<key>Cpuid1Mask</key>
 			<data></data>
+			<key>DummyPowerManagement</key>
+			<false/>
+			<key>MaxKernel</key>
+			<string></string>
+			<key>MinKernel</key>
+			<string></string>
 		</dict>
+		<key>Force</key>
+		<array/>
 		<key>Patch</key>
 		<array>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Base</key>
 				<string>__ZN8AppleRTC18setupDateTimeAlarmEPK11RTCDateTime</string>
 				<key>Comment</key>
@@ -504,6 +542,8 @@
 				<integer>0</integer>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Base</key>
 				<string>_AcpiOsVprintf</string>
 				<key>Comment</key>
@@ -532,6 +572,8 @@
 				<integer>0</integer>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Base</key>
 				<string>__ZN11BCM5701Enet14getAdapterInfoEv</string>
 				<key>Comment</key>
@@ -560,6 +602,8 @@
 				<integer>0</integer>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Base</key>
 				<string>_panic</string>
 				<key>Comment</key>
@@ -588,6 +632,8 @@
 				<integer>0</integer>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>Base</key>
 				<string>_kernel_debug_string_early</string>
 				<key>Comment</key>
@@ -630,15 +676,19 @@
 			<false/>
 			<key>DisableIoMapper</key>
 			<true/>
+			<key>DisableLinkeditJettison</key>
+			<false/>
 			<key>DisableRtcChecksum</key>
 			<false/>
-			<key>DummyPowerManagement</key>
+			<key>ExtendBTFeatureFlags</key>
 			<false/>
 			<key>ExternalDiskIcons</key>
 			<false/>
 			<key>IncreasePciBarSize</key>
 			<false/>
 			<key>LapicKernelPanic</key>
+			<false/>
+			<key>LegacyCommpage</key>
 			<false/>
 			<key>PanicNoKextDump</key>
 			<true/>
@@ -648,6 +698,15 @@
 			<false/>
 			<key>XhciPortLimit</key>
 			<true/>
+		</dict>
+		<key>Scheme</key>
+		<dict>
+			<key>FuzzyMatch</key>
+			<false/>
+			<key>KernelArch</key>
+			<string>Auto</string>
+			<key>KernelCache</key>
+			<string>Auto</string>
 		</dict>
 	</dict>
 	<key>Misc</key>
@@ -719,14 +778,26 @@
 			<true/>
 			<key>AllowSetDefault</key>
 			<true/>
+			<key>ApECID</key>
+			<integer>0</integer>
 			<key>AuthRestart</key>
 			<false/>
 			<key>BootProtect</key>
 			<string>Bootstrap</string>
+			<key>DmgLoading</key>
+			<string>Signed</string>
+			<key>EnablePassword</key>
+			<false/>
 			<key>ExposeSensitiveData</key>
 			<integer>2</integer>
 			<key>HaltLevel</key>
 			<integer>2147483648</integer>
+			<key>PasswordHash</key>
+			<data></data>
+			<key>PasswordSalt</key>
+			<data></data>
+			<key>SecureBootModel</key>
+			<string>Default</string>
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>Vault</key>
@@ -860,6 +931,10 @@
 			<false/>
 			<key>MLB</key>
 			<string>C02935130J9LNV9UE</string>
+			<key>ProcessorType</key>
+			<integer>0</integer>
+			<key>SystemMemoryStatus</key>
+			<string>Auto</string>
 			<key>ROM</key>
 			<data>ESIzRFVm</data>
 			<key>SpoofVendor</key>
@@ -982,9 +1057,13 @@
 			<false/>
 			<key>AppleImageConversion</key>
 			<false/>
+			<key>AppleImg4Verification</key>
+			<false/>
 			<key>AppleKeyMap</key>
 			<false/>
 			<key>AppleRtcRam</key>
+			<false/>
+			<key>AppleSecureBoot</key>
 			<false/>
 			<key>AppleSmcIo</key>
 			<false/>
