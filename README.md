@@ -14,11 +14,13 @@
 
 当前BIOS版本：7C82v12 [BIOS下载地址](https://cn.msi.com/Motherboard/support/MAG-B460M-MORTAR)
 
-### EFI [下载地址](https://github.com/myqqiu/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630/releases)
+### EFI
 
 OpenCore: 0.6.2
 
 macOS version: 10.15.7
+
+EFI下载地址: [Download](https://github.com/myqqiu/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630/releases)
 
 
 ### 系统安装
@@ -42,7 +44,7 @@ macOS version: 10.15.7
 ### 关于睡眠的问题
 * BIOS默认关闭了USB唤醒，睡眠后需按电源键唤醒
 * 需鼠标键盘唤醒的，在BIOS里设置USB唤醒为允许即可（已修复开启USB唤醒时，关机后不断电操作鼠标或键盘会重新启动的问题）
-> PS: 若睡眠有问题的可使用 Hackintool 工具，切换到电源选项，点击一下下面的螺丝刀修复
+> PS: 若睡眠有问题的可使用 Hackintool 工具，切换到电源选项，点击下面的螺丝刀图标修复
 
 ### 关于Mac序列号的问题
 * 下载 OpenCore Configurator for Mac，打开 PlatformInfo -> Model Lookup | Check Coverage 右侧选择 iMac19,1 机型（生成你的唯一硬件UUID），然后 Save as (另存为) config.plist
