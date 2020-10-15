@@ -14,13 +14,12 @@
 
 当前BIOS版本：7C82v12 [BIOS下载地址](https://cn.msi.com/Motherboard/support/MAG-B460M-MORTAR)
 
-### EFI 
+### EFI [下载地址](https://github.com/myqqiu/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630/releases)
 
 OpenCore: 0.6.2
 
 macOS version: 10.15.7
 
-[EFI下载地址](https://github.com/myqqiu/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630/releases)
 
 ### 系统安装
 * 建议使用 【黑果小兵】macOS Catalina 10.15.6 安装镜像进行安装
@@ -48,7 +47,7 @@ macOS version: 10.15.7
 ### 关于Mac序列号的问题
 * 下载 OpenCore Configurator for Mac，打开 PlatformInfo -> Model Lookup | Check Coverage 右侧选择 iMac19,1 机型（生成你的唯一硬件UUID），然后 Save as (另存为) config.plist
 * 在config.plist文件中找到如下代码，记录MLB、SystemSerialNumber和SystemUUID的值并记住它，更新EFI时，用你记录的值替换 /OC/config.plist 下对应的值即可
-> 或使用 Hackintool 工具（系统 -> 序列号生成器）来获取三码
+> PS: 还可使用 Hackintool 工具（系统 -> 序列号生成器）来获取三码
 
 ```
 <key>PlatformInfo</key>
