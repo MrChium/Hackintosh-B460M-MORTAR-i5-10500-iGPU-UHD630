@@ -18,7 +18,7 @@
 
 OpenCore: 0.6.2
 
-macOS version: 10.15.7
+macOS version: 10.15.6
 
 EFI下载地址: [Download](https://github.com/myqqiu/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630/releases)
 
