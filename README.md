@@ -10,9 +10,19 @@
 | 内存  | 威刚2666 8G*2 |
 | 显卡  | I5-10500 核显 UHD630  |
 
+### CPU支持
+- [x] 支持所有10代核显为UHD630的CPU
+- [x] 无核显带F的10代CPU，有以下免驱独显也可以（但无法使用核显加速）
+
+### 显卡支持
+- [x] 支持仅有CPU核显的UHD630显卡
+- [x] 支持AMD独显 RX 470/480/570/570X/580/580X/590 系列显卡
+- [x] 支持AMD独显 RX 5500/5600/5700 系列显卡(需使用专用config.plist)
+> PS: 使用独显的需在BIOS里强制打开CPU核显（高级 -> 内建显示配置 -> 集成显卡多显示器(IGD Multi-monitor) -> 允许），否则核显硬件解码失效，只使用核显的可以忽略
+
 ### BIOS版本
 
-当前BIOS版本：7C82v12 [BIOS下载地址](https://cn.msi.com/Motherboard/support/MAG-B460M-MORTAR)
+当前BIOS版本：7C82v12 &nbsp;&nbsp; [BIOS下载地址](https://cn.msi.com/Motherboard/support/MAG-B460M-MORTAR)
 
 ### EFI
 
@@ -80,4 +90,4 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 ```
 
 ### 设置默认启动项
-* 在启动选择界面，先选中要启动的项，然后按住键盘的 Ctrl + Enter (回车键) 进入系统，下次重启后默认就选中这个项了。
+* 在启动选择界面，先选中要启动的项，然后按键盘的 Ctrl + Enter (回车键) 进入系统，下次重启后默认就选中该项了

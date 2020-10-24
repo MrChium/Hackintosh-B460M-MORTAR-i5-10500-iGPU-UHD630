@@ -873,7 +873,7 @@
 				<key>SystemAudioVolume</key>
 				<data>YA==</data>
 				<key>boot-args</key>
-				<string>igfxfw=2 igfxonln=1 alcid=1 gfxrst=1 alcdelay=500 shikigva=80</string>
+				<string>agdpmod=pikera igfxfw=2 igfxonln=1 alcid=1 gfxrst=1 alcdelay=500 shikigva=80</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
 				<key>prev-lang:kbd</key>
