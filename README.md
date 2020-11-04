@@ -35,7 +35,7 @@
 
 ### EFI
 
-OpenCore: 0.6.2
+OpenCore: 0.6.3
 
 macOS version: 10.15.7
 
