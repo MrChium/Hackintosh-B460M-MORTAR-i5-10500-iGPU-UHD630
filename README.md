@@ -26,11 +26,11 @@
 
 ### BIOS设置
 
-USB设备从S3/S4/S5唤醒：允许
-PS/2鼠标从S3/S4/S5唤醒：允许
-USB键盘从S3/S4/S5唤醒：任意键
-集成显卡多显示器：允许 （否则核显硬件解码失效，只使用核显的可以忽略）
-CFG锁定：禁止
+* USB设备从S3/S4/S5唤醒：允许
+* PS/2鼠标从S3/S4/S5唤醒：允许
+* USB键盘从S3/S4/S5唤醒：任意键
+* 集成显卡多显示器：允许（否则核显硬件解码失效，只使用核显的可以忽略）
+* CFG锁定：禁止
 
 
 ### EFI
@@ -49,7 +49,13 @@ EFI下载地址: [Download](https://github.com/myqqiu/Hackintosh-B460M-MORTAR-i5
 (本EFI请使用config_install.plist配置文件，即删除原config.plist后重命名config_install.plist为config.plist即可)
 
 * 系统安装成功后，替换为本EFI默认的config.plist文件即可
-* 若使用4K显示器，请将“UIScale”的值修改为 <data>Ag==</data>以获得最佳ui体验。
+* 若使用4K显示器，请将 "UIScale" 的值修改为 "Ag==" 以获得最佳ui体验
+
+```
+<key>UIScale</key>
+<data>Ag==</data>
+```
+
 
 ### 功能测试
 - [x] 睡眠/唤醒
