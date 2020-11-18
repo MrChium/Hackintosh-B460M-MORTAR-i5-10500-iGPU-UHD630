@@ -22,7 +22,7 @@
 
 ### BIOS版本
 
-当前BIOS版本：7C82v12 &nbsp;&nbsp; [BIOS下载地址](https://cn.msi.com/Motherboard/support/MAG-B460M-MORTAR)
+当前BIOS版本：7C82v13 &nbsp;&nbsp; [BIOS下载地址](https://cn.msi.com/Motherboard/support/MAG-B460M-MORTAR)
 
 ### BIOS设置
 
@@ -38,6 +38,8 @@
 OpenCore: 0.6.3
 
 macOS version: 10.15.7
+
+支持：macOS Big Sur 11.0.1 (注意: 安装系统时分区格式选择APFS, 而不是MacOS扩展日志式)
 
 EFI下载地址: [Download](https://github.com/myqqiu/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630/releases)
 
