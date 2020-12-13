@@ -30,22 +30,23 @@
 * PS/2鼠标从S3/S4/S5唤醒：允许
 * USB键盘从S3/S4/S5唤醒：任意键
 * 集成显卡多显示器：允许（否则核显硬件解码失效，只使用核显的可以忽略）
-* CFG锁定：禁止
-
+* OC -> CPU 特征 -> Intel 虚拟化技术：允许
+* OC -> CPU 特征 -> Intel VT-D 技术：禁止
+* OC -> CPU 特征 -> CFG锁定：禁止
 
 ### EFI
 
-OpenCore: 0.6.3
+OpenCore: 0.6.4
 
-macOS version: 10.15.7
-
-支持：macOS Big Sur 11.0.1 (注意: 安装系统时分区格式选择APFS, 而不是MacOS扩展日志式)
+macOS Big Sur 11.0.1 (注意: 安装系统时分区格式选择APFS, 而不是MacOS扩展日志式)
 
 EFI下载地址: [Download](https://github.com/myqqiu/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630/releases)
 
+> PS: 本次EFI升级为正式版，非图形界面直接选择 Reset NVRAM 选项，图形界面在选择启动盘时按空格，再选中 Reset NVRAM 选项，(回车键)重置NVRAM，重置后可能需要在BIOS中重新设置磁盘启动优先顺序
+
 
 ### 系统安装
-* 建议使用 【黑果小兵】macOS Catalina 10.15.6 安装镜像进行安装
+* 建议使用 【黑果小兵】macOS Catalina 11.0.1 安装镜像进行安装
 
 * 若安装镜像卡加号或其它异常无法安装，可使用本EFI替换安装镜像的EFI进行尝试
 (本EFI请使用config_install.plist配置文件，即删除原config.plist后重命名config_install.plist为config.plist即可)
@@ -71,7 +72,7 @@ EFI下载地址: [Download](https://github.com/myqqiu/Hackintosh-B460M-MORTAR-i5
 
 ### 关于睡眠的问题
 * BIOS默认关闭了USB唤醒，睡眠后需按电源键唤醒
-* 需鼠标键盘唤醒的，在BIOS里设置USB唤醒为允许即可（已修复开启USB唤醒时，关机后不断电操作鼠标或键盘会重新启动的问题）
+* 需鼠标键盘唤醒的，在BIOS里设置USB唤醒为允许即可
 > PS: 若睡眠有问题的可使用 Hackintool 工具，切换到电源选项，点击下面的螺丝刀图标修复
 
 ### 关于Mac序列号的问题
