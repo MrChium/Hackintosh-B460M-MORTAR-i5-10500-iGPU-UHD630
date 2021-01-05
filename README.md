@@ -36,9 +36,9 @@
 
 ### EFI
 
-OpenCore: 0.6.4
+OpenCore: 0.6.5
 
-macOS Big Sur 11.0.1 (注意: 安装系统时分区格式选择APFS, 而不是MacOS扩展日志式)
+macOS Big Sur 11.1 (注意: 安装系统时分区格式选择APFS, 而不是MacOS扩展日志式)
 
 EFI下载地址: [Download](https://github.com/myqqiu/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630/releases)
 
@@ -46,7 +46,7 @@ EFI下载地址: [Download](https://github.com/myqqiu/Hackintosh-B460M-MORTAR-i5
 
 
 ### 系统安装
-* 建议使用 【黑果小兵】macOS Catalina 11.0.1 安装镜像进行安装
+* 建议使用 【黑果小兵】macOS Catalina 11.1 安装镜像进行安装
 
 * 若安装镜像卡加号或其它异常无法安装，可使用本EFI替换安装镜像的EFI进行尝试
 (本EFI请使用config_install.plist配置文件，即删除原config.plist后重命名config_install.plist为config.plist即可)
