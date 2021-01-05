@@ -76,7 +76,7 @@ EFI下载地址: [Download](https://github.com/myqqiu/Hackintosh-B460M-MORTAR-i5
 > PS: 若睡眠有问题的可使用 Hackintool 工具，切换到电源选项，点击下面的螺丝刀图标修复
 
 ### 关于Mac序列号的问题
-* 下载 OpenCore Configurator for Mac，打开 PlatformInfo -> Model Lookup | Check Coverage 右侧选择 iMac19,1 机型（生成你的唯一硬件UUID），然后 Save as (另存为) config.plist
+* 下载 OpenCore Configurator for Mac，打开 PlatformInfo -> Model Lookup | Check Coverage 右侧选择 iMac20,1 机型（生成你的唯一硬件UUID），然后 Save as (另存为) config.plist
 * 在config.plist文件中找到如下代码，记录MLB、SystemSerialNumber和SystemUUID的值并记住它，更新EFI时，用你记录的值替换 /OC/config.plist 下对应的值即可
 > PS: 还可使用 Hackintool 工具（系统 -> 序列号生成器）来获取三码
 
@@ -88,17 +88,21 @@ EFI下载地址: [Download](https://github.com/myqqiu/Hackintosh-B460M-MORTAR-i5
         <key>AdviseWindows</key>
         <false/>
         <key>MLB</key>
-        <string>C02935130J9LNV9UE</string>
+        <string>C02047501CDPHCDAD</string>
+        <key>ProcessorType</key>
+        <integer>4105</integer>
         <key>ROM</key>
-        <data></data>
+        <data>ESIzRFVm</data>
         <key>SpoofVendor</key>
         <true/>
+        <key>SystemMemoryStatus</key>
+        <string>Auto</string>
         <key>SystemProductName</key>
-        <string>iMac19,1</string>
+        <string>iMac20,1</string>
         <key>SystemSerialNumber</key>
-        <string>C02Z906MJV3Q</string>
+        <string>C02DQSZFPN5T</string>
         <key>SystemUUID</key>
-        <string>FF264005-A041-4841-B17A-263B39D76BA0</string>
+        <string>C567A1A9-9233-4D4D-B021-E1F38B112F33</string>
     </dict>
 ```
 
