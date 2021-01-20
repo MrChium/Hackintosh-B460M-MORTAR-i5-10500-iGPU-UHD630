@@ -794,8 +794,6 @@
 			<false/>
 			<key>MLB</key>
 			<string>C02047501CDPHCDAD</string>
-			<key>ProcessorType</key>
-			<integer>4105</integer>
 			<key>ROM</key>
 			<data>ESIzRFVm</data>
 			<key>SpoofVendor</key>
