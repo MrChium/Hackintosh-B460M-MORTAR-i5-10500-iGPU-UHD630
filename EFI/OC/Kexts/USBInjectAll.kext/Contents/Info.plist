@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>20A5354i</string>
+	<string>20C69</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
@@ -31,19 +31,19 @@
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>12A8169g</string>
+	<string>12C33</string>
 	<key>DTPlatformName</key>
 	<string>macosx</string>
 	<key>DTPlatformVersion</key>
-	<string>11.0</string>
+	<string>11.1</string>
 	<key>DTSDKBuild</key>
-	<string>20A5323l</string>
+	<string>20C63</string>
 	<key>DTSDKName</key>
-	<string>macosx11.0</string>
+	<string>macosx11.1</string>
 	<key>DTXcode</key>
-	<string>1200</string>
+	<string>1230</string>
 	<key>DTXcodeBuild</key>
-	<string>12A8169g</string>
+	<string>12C33</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>ConfigurationData</key>
@@ -582,7 +582,7 @@
 				<dict>
 					<key>port-count</key>
 					<data>
-					EAAAAA==
+					EgAAAA==
 					</data>
 					<key>ports</key>
 					<dict>
@@ -674,6 +674,24 @@
 							<key>port</key>
 							<data>
 							CgAAAA==
+							</data>
+						</dict>
+						<key>HS11</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>
+							CwAAAA==
+							</data>
+						</dict>
+						<key>HS12</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>
+							DAAAAA==
 							</data>
 						</dict>
 						<key>SS01</key>
@@ -2208,10 +2226,28 @@
 						<key>HS12</key>
 						<dict>
 							<key>UsbConnector</key>
-							<integer>255</integer>
+							<integer>3</integer>
 							<key>port</key>
 							<data>
 							DAAAAA==
+							</data>
+						</dict>
+						<key>HS13</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>
+							DQAAAA==
+							</data>
+						</dict>
+						<key>HS14</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>
+							DgAAAA==
 							</data>
 						</dict>
 						<key>SS01</key>
@@ -2284,6 +2320,24 @@
 							<key>port</key>
 							<data>
 							GAAAAA==
+							</data>
+						</dict>
+						<key>SS09</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>
+							GQAAAA==
+							</data>
+						</dict>
+						<key>SS10</key>
+						<dict>
+							<key>UsbConnector</key>
+							<integer>3</integer>
+							<key>port</key>
+							<data>
+							GgAAAA==
 							</data>
 						</dict>
 						<key>USR1</key>
