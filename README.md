@@ -36,7 +36,7 @@
 
 ### EFI
 
-OpenCore: 0.6.6
+OpenCore: 0.6.7
 
 macOS Big Sur 11.1 (注意: 安装系统时分区格式选择APFS, 而不是MacOS扩展日志式)
 
