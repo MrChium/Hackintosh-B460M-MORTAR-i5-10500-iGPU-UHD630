@@ -22,7 +22,7 @@
 
 ### BIOS版本
 
-当前BIOS版本：7C82v13 &nbsp;&nbsp; [BIOS下载地址](https://cn.msi.com/Motherboard/support/MAG-B460M-MORTAR)
+当前BIOS版本：7C82v14 &nbsp;&nbsp; [BIOS下载地址](https://cn.msi.com/Motherboard/support/MAG-B460M-MORTAR)
 
 ### BIOS设置
 
@@ -36,7 +36,7 @@
 
 ### EFI
 
-OpenCore: 0.6.8
+OpenCore: 0.7.0
 
 macOS Big Sur 11.1 (注意: 安装系统时分区格式选择APFS, 而不是MacOS扩展日志式)
 
