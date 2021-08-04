@@ -36,17 +36,13 @@
 
 ### EFI
 
-OpenCore: 0.7.0
-
-macOS Big Sur 11.1 (注意: 安装系统时分区格式选择APFS, 而不是MacOS扩展日志式)
+OpenCore: 0.7.2
 
 EFI下载地址: [Download](https://github.com/myqqiu/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630/releases)
 
-> PS: 本次EFI升级为正式版，非图形界面直接选择 Reset NVRAM 选项，图形界面在选择启动盘时按空格，再选中 Reset NVRAM 选项，(回车键)重置NVRAM，重置后可能需要在BIOS中重新设置磁盘启动优先顺序
-
 
 ### 系统安装
-* 建议使用 【黑果小兵】macOS Catalina 11.1 安装镜像进行安装
+* 建议使用 【黑果小兵】macOS 安装镜像进行安装
 
 * 若安装镜像卡加号或其它异常无法安装，可使用本EFI替换安装镜像的EFI进行尝试
 (本EFI请使用config_install.plist配置文件，即删除原config.plist后重命名config_install.plist为config.plist即可)
