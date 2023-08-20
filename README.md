@@ -36,7 +36,7 @@
 
 ### EFI
 
-OpenCore: 0.7.4
+OpenCore: 0.9.3
 
 EFI下载地址: [Download](https://github.com/myqqiu/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630/releases)
 
