@@ -180,6 +180,8 @@
 			<false/>
 			<key>SyncTableIds</key>
 			<false/>
+			<key>EnableForAll</key>
+            <false/>
 		</dict>
 	</dict>
 	<key>Booter</key>
@@ -206,6 +208,8 @@
 			<true/>
 			<key>EnableWriteUnprotector</key>
 			<true/>
+			<key>FixupAppleEfiImages</key>
+			<true/>
 			<key>ForceBooterSignature</key>
 			<false/>
 			<key>ForceExitBootServices</key>
@@ -230,6 +234,8 @@
 			<false/>
 			<key>SyncRuntimePermissions</key>
 			<false/>
+			<key>EnableForAll</key>
+            <false/>
 		</dict>
 	</dict>
 	<key>DeviceProperties</key>
@@ -620,6 +626,8 @@
 			<true/>
 			<key>HideAuxiliary</key>
 			<true/>
+			<key>InstanceIdentifier</key>
+			<string></string>
 			<key>LauncherOption</key>
 			<string>Disabled</string>
 			<key>LauncherPath</key>
@@ -640,6 +648,8 @@
 			<integer>0</integer>
 			<key>Timeout</key>
 			<integer>5</integer>
+			<key>SkipCustomEntryCheck</key>
+            <false/>
 		</dict>
 		<key>Debug</key>
 		<dict>
@@ -731,11 +741,11 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Auxiliary</key>
-				<false/>
+				<true/>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Flavour</key>
 				<string>Auto</string>
 				<key>FullNvramAccess</key>
@@ -1199,6 +1209,8 @@
 			<key>ResizeGpuBars</key>
 			<integer>-1</integer>
 			<key>ResizeUsePciRbIo</key>
+			<false/>
+			<key>ShimRetainProtocol</key>
 			<false/>
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>

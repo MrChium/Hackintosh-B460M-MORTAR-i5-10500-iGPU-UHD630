@@ -99,7 +99,58 @@
 			<key>IOPCIPauseCompatible</key>
 			<true/>
 			<key>IOPCIPrimaryMatch</key>
-			<string>0xa3af8086 0x34ed8086 0x06ed8086</string>
+			<string>0x34ed8086 0x06ed8086 0xa3af8086</string>
+			<key>IOPCITunnelCompatible</key>
+			<true/>
+			<key>IOProbeScore</key>
+			<integer>900</integer>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+		</dict>
+		<key>AppleUSBXHCISPT 500</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
+			<key>IOClass</key>
+			<string>AppleUSBXHCISPT</string>
+			<key>IOPCIPauseCompatible</key>
+			<true/>
+			<key>IOPCIPrimaryMatch</key>
+			<string>0x43ed8086 0xa0ed8086</string>
+			<key>IOPCITunnelCompatible</key>
+			<true/>
+			<key>IOProbeScore</key>
+			<integer>900</integer>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+		</dict>
+		<key>AppleUSBXHCISPT 600</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
+			<key>IOClass</key>
+			<string>AppleUSBXHCISPT</string>
+			<key>IOPCIPauseCompatible</key>
+			<true/>
+			<key>IOPCIPrimaryMatch</key>
+			<string>0x51ed8086 0x7ae08086</string>
+			<key>IOPCITunnelCompatible</key>
+			<true/>
+			<key>IOProbeScore</key>
+			<integer>900</integer>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+		</dict>
+		<key>AppleUSBXHCISPT 700</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
+			<key>IOClass</key>
+			<string>AppleUSBXHCISPT</string>
+			<key>IOPCIPauseCompatible</key>
+			<true/>
+			<key>IOPCIPrimaryMatch</key>
+			<string>0x7a608086</string>
 			<key>IOPCITunnelCompatible</key>
 			<true/>
 			<key>IOProbeScore</key>

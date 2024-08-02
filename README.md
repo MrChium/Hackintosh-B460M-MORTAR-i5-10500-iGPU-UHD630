@@ -7,7 +7,7 @@
 |  ----  | ----  |
 | CPU  | I5-10500 |
 | 主板  | B460M 迫击炮 |
-| 内存  | 威刚2666 8G*2 |
+| 内存  | 威刚2666 8G*4 |
 | 显卡  | I5-10500 核显 UHD630  |
 
 ### CPU支持
@@ -22,7 +22,7 @@
 
 ### BIOS版本
 
-当前BIOS版本：7C82v14 &nbsp;&nbsp; [BIOS下载地址](https://cn.msi.com/Motherboard/support/MAG-B460M-MORTAR)
+当前BIOS版本：7C82v17 &nbsp;&nbsp; [BIOS下载地址](https://www.msi.cn/Motherboard/MAG-B460M-MORTAR/support)
 
 ### BIOS设置
 
@@ -36,7 +36,7 @@
 
 ### EFI
 
-OpenCore: 0.9.3
+OpenCore: 1.0.0
 
 EFI下载地址: [Download](https://github.com/myqqiu/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630/releases)
 
@@ -110,3 +110,10 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 
 ### 设置默认启动项
 * 在启动选择界面，先选中要启动的项，然后按键盘的 Ctrl + Enter (回车键) 进入系统，下次重启后默认就选中该项了
+
+### Windows+MacOS双系统，MacOS升级到12及以后版本卡的问题
+* 出现该问题主要是“聚焦”搜索（Spotlight）在后台重建索引，占用资源极大（mds_stores的进程CPU占用极高）导致的。
+> 1、选择系统菜单“系统设置”。<br>
+> 2、点击菜单中的“聚焦”，选择“隐私”。<br>
+> 3、将你Finder中左侧位置下的Windows分区磁盘（NTFS,FAT32等）拖移到“聚焦”隐私位置列表中，或者点按添加按钮 (+)，然后选择要添加的磁盘。<br>
+> 4、如果你不需要此功能可以将除系统盘外的所有磁盘都加入隐私列表中。
