@@ -22,7 +22,7 @@
 
 ### BIOS版本
 
-当前BIOS版本：7C82v17 &nbsp;&nbsp; [BIOS下载地址](https://www.msi.cn/Motherboard/MAG-B460M-MORTAR/support)
+当前BIOS版本：7C82v16 &nbsp;&nbsp; [BIOS下载地址](https://www.msi.cn/Motherboard/MAG-B460M-MORTAR/support)
 
 ### BIOS设置
 
@@ -30,6 +30,7 @@
 * PS/2鼠标从S3/S4/S5唤醒：允许
 * USB键盘从S3/S4/S5唤醒：任意键
 * 集成显卡多显示器：允许（否则核显硬件解码失效，只使用核显的可以忽略）
+* 安全 -> 安全引导 -> 安全启动：禁止
 * OC -> CPU 特征 -> Intel 虚拟化技术：允许
 * OC -> CPU 特征 -> Intel VT-D 技术：禁止
 * OC -> CPU 特征 -> CFG锁定：禁止
@@ -111,7 +112,7 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 ### 设置默认启动项
 * 在启动选择界面，先选中要启动的项，然后按键盘的 Ctrl + Enter (回车键) 进入系统，下次重启后默认就选中该项了
 
-### Windows+MacOS双系统，MacOS升级到12及以后版本卡的问题
+### Win+Mac双系统MacOS升级到12及以后版本卡的问题
 * 出现该问题主要是“聚焦”搜索（Spotlight）在后台重建索引，占用资源极大（mds_stores的进程CPU占用极高）导致的。
 > 1、选择系统菜单“系统设置”。<br>
 > 2、点击菜单中的“聚焦”，选择“隐私”。<br>
